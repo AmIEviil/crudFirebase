@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      CRUD Firebase
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-list-sliding *ngFor="let reg of personas">
+      <ion-item button [routerLink]="['/detalle',reg.id]">
+        <ion-label>{{reg.nombre}} - {{reg.apellido}}</ion-label>
+      </ion-item>
+    </ion-list-sliding>
+  </ion-list>
+</ion-content>

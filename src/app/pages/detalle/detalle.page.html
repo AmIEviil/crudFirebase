@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    
+    <ion-item *ngIf="persona">
+      <ion-input type="text" [(ngModel)]="persona.apellido"> </ion-input>
+    </ion-item>
+
+    <ion-item *ngIf="persona">
+      <ion-input type="text" [(ngModel)]="persona.nombre"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input> </ion-input>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
